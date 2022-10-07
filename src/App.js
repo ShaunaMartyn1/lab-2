@@ -12,12 +12,12 @@ import { BrowserRouter as Router,
    Route
   } from 'react-router-dom';
 
-
 class App extends React.Component {
   render(){
   return (
     <Router>
     <div className="App">
+     {/*Imported in Navbar code*/}
       <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="/">Navbar</Navbar.Brand>
@@ -28,6 +28,7 @@ class App extends React.Component {
           </Nav>
         </Container>
       </Navbar>
+        {/*Change URL when clicked on */}
       <Routes>
         <Route path= '/' element={<Content></Content>}></Route>
         <Route path='/read' element={<Header></Header>}></Route>
